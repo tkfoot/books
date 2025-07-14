@@ -1,5 +1,6 @@
 ---
-id: "star-temp"
+id: "star-temp "
+title: "第3幕 "
 episode_number: 3
 published_at: "2025-07-14"
 ---
