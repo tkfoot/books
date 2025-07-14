@@ -1,6 +1,6 @@
 ---
 id: "seasonal_story_chapter3"
-title: "第三話 "
+title: "第三話"
 episode_number: 3
 published_at: "2025-07-14"
 ---

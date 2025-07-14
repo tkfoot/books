@@ -1,6 +1,6 @@
 ---
 id: "star-temple-complete"
-title: "星の神殿 (完全版) "
+title: "星の神殿 (完全版)"
 episode_number: 4
 published_at: "2025-07-14"
 ---

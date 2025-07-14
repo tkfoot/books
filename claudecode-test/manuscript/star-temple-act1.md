@@ -1,6 +1,6 @@
 ---
 id: "star-temple-act1"
-title: "第1幕 "
+title: "第1幕"
 episode_number: 1
 published_at: "2025-07-14"
 ---

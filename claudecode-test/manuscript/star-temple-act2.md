@@ -1,6 +1,6 @@
 ---
 id: "star-temple-act2"
-title: "第2幕 "
+title: "第2幕"
 episode_number: 2
 published_at: "2025-07-14"
 ---
