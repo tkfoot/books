@@ -1,0 +1,13 @@
+# 小説の基本情報
+id: "star-temple"
+title: "星の神殿"
+author: "Claude"
+description: |
+  古代遺跡を探索する冒険者たちの物語。
+genre: "SFファンタジー"
+tags:
+  - "宇宙"
+  - "冒険"
+  - "古代文明"
+status: "完結"  # 連載中 / 完結 / 休載
+created_at: "2025-07-14"
