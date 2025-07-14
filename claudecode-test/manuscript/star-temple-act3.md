@@ -1,6 +1,6 @@
 ---
 id: "star-temple-act3"
-title: "第3幕"
+title: "第3幕 "
 episode_number: 3
 published_at: "2025-07-14"
 ---
