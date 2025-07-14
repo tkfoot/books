@@ -1,4 +1,10 @@
- # 白き幻獣と調律の少女
+ ---
+id: "seasonal_story_chapter1"
+title: "第一話"
+episode_number: 1
+published_at: "2025-07-14"
+---
+# 白き幻獣と調律の少女
 
 ## 第一話
 

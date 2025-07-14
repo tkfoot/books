@@ -1,3 +1,9 @@
+---
+id: "star-temple-complete"
+title: "星の神殿 (完全版)"
+episode_number: 4
+published_at: "2025-07-14"
+---
 # 星の神殿
 
 ## 第1幕：発見と探索開始
