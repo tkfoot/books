@@ -1,8 +1,8 @@
 ---
 id: "seasonal_story_chapter4"
-title: "第四話（最終話）"
+title: "第四話（最終話） "
 episode_number: 4
-published_at: "2025-07-19"
+published_at: "2025-07-14"
 ---
 # 白き幻獣と調律の少女
 
