@@ -1,6 +1,6 @@
 ---
 id: "star-temple-complete"
-title: "星の神殿 (完全版) "
+title: "星の神殿 (完全版)"
 episode_number: 4
 published_at: "2025-07-14"
 ---
@@ -362,5 +362,4 @@ published_at: "2025-07-14"
 
 宇宙の調和を守る者として。
 
- 
 **完**
