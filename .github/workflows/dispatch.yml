@@ -37,6 +37,32 @@ jobs:
             echo "should_sync=true" >> $GITHUB_OUTPUT
           fi
 
+      - name: Debug Environment
+        run: |
+          echo "=== Environment Debug ==="
+          echo "GITHUB_TOKEN exists: ${{ secrets.GITHUB_TOKEN != '' }}"
+          echo "DISPATCH_PAT exists: ${{ secrets.DISPATCH_PAT != '' }}"
+          echo "Repository: ${{ github.repository }}"
+          echo "Actor: ${{ github.actor }}"
+          echo "Target repo: yar0316/novel-viewer"
+
+      - name: Validate Token Access
+        run: |
+          echo "=== Token Validation ==="
+          curl -H "Authorization: token ${{ secrets.DISPATCH_PAT }}" \
+               -H "Accept: application/vnd.github.v3+json" \
+               https://api.github.com/repos/yar0316/novel-viewer \
+               -w "HTTP Status: %{http_code}\n" -s -o /dev/null || echo "Token validation failed"
+
+      - name: Pre-dispatch Debug
+        if: steps.changes.outputs.should_sync == 'true'
+        run: |
+          echo "=== Dispatch Debug ==="
+          echo "Target repository: yar0316/novel-viewer"
+          echo "Event type: sync-novel-data"
+          echo "Client payload will be:"
+          echo '{"data_repo": "${{ github.repository }}", "ref": "${{ github.ref }}", "sha": "${{ github.sha }}", "pusher": "${{ github.actor }}", "timestamp": "${{ github.event.head_commit.timestamp }}"}'
+
       - name: Trigger Sync Workflow in Main App
         if: steps.changes.outputs.should_sync == 'true'
         uses: peter-evans/repository-dispatch@v3
@@ -60,3 +86,20 @@ jobs:
           echo "Repository: ${{ github.repository }}"
           echo "Commit: ${{ github.sha }}"
           echo "Pusher: ${{ github.actor }}"
+
+      - name: Handle Dispatch Failure
+        if: failure() && steps.changes.outputs.should_sync == 'true'
+        run: |
+          echo "=== Dispatch Failed Debug ==="
+          echo "Last exit code: $?"
+          echo "Checking token permissions..."
+          echo "Testing repository access:"
+          curl -H "Authorization: token ${{ secrets.DISPATCH_PAT }}" \
+               -H "Accept: application/vnd.github.v3+json" \
+               https://api.github.com/repos/yar0316/novel-viewer \
+               -w "HTTP Status: %{http_code}\n" -v
+          echo "Testing dispatch endpoint:"
+          curl -H "Authorization: token ${{ secrets.DISPATCH_PAT }}" \
+               -H "Accept: application/vnd.github.v3+json" \
+               https://api.github.com/repos/yar0316/novel-viewer/dispatches \
+               -w "HTTP Status: %{http_code}\n" -v
