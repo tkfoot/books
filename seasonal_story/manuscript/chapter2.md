@@ -2,7 +2,7 @@
 id: "seasonal_story_chapter2"
 title: "第二話"
 episode_number: 2
-published_at: "2025-07-14"
+published_at: "2025-07-17"
 ---
 # 白き幻獣と調律の少女
 

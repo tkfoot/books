@@ -27,7 +27,7 @@ books/
 
 ```yaml
 # 小説の基本情報
-id: "作品ID"                    # 必須: 英数字とハイフンのみ
+id: 1                          # 必須: 数値ID（1,2,3...）
 title: "作品タイトル"            # 必須: 表示用タイトル
 author: "著者名"                # 必須: 作者名
 description: |                 # 必須: 作品概要
@@ -61,7 +61,7 @@ published_at: "2025-07-14"    # 任意: 公開日(YYYY-MM-DD)
 ## ✅ 必須フィールド
 
 ### info.yml
-- `id`: 作品の固有識別子（英数字とハイフン、アンダースコアのみ）
+- `id`: 作品の固有識別子（数値、1,2,3...）
 - `title`: 作品タイトル
 - `author`: 著者名
 - `description`: 作品説明
@@ -133,7 +133,7 @@ my-novel/
 
 **info.yml**:
 ```yaml
-id: "my-novel"
+id: 1
 title: "私の小説"
 author: "作者名"
 description: "面白い小説です"

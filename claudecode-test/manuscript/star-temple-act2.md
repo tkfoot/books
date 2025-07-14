@@ -2,7 +2,7 @@
 id: "star-temple-act2"
 title: "第2幕"
 episode_number: 2
-published_at: "2025-07-14"
+published_at: "2025-07-17"
 ---
 # 星の神殿 - 第2幕
 

@@ -2,7 +2,7 @@
 id: "seasonal_story_chapter3"
 title: "第三話"
 episode_number: 3
-published_at: "2025-07-14"
+published_at: "2025-07-18"
 ---
 # 白き幻獣と調律の少女
 
