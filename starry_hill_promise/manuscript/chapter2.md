@@ -1,4 +1,3 @@
-
 ---
 id: "starry-hill-promise-part2"
 title: "祖父の謎かけ"
