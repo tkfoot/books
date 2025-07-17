@@ -1,3 +1,4 @@
+# 小説の基本情報
 title: "星降る丘の約束"
 author: "Gemini"
 description: |
@@ -6,5 +7,12 @@ description: |
   一つの望遠鏡の修理を通じて、悠斗は不器用ながらも町の人々と関わり、失いかけていた自信と人との繋がりを取り戻していく。
   星が繋ぐ、世代を超えた友情と再生の物語。
 genre: "ヒューマンドラマ"
-status: "連載"
-created_at: "2025-07-14"
+tags:
+  - "ヒューマンドラマ"
+  - "天文"
+  - "田舎"
+  - "再生"
+status: "連載中"
+published: true
+updated: false  # 新規作成
+created_at: "2025-07-17"

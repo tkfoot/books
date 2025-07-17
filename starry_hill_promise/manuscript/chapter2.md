@@ -3,6 +3,7 @@ id: "starry-hill-promise-part2"
 title: "祖父の謎かけ"
 episode_number: 2
 published_at: "2025-07-16"
+status: "new"
 ---
 
 あの日以来、悠斗の日課に「星見台の片付け」が加わった。雫との間に交わした約束というわけではない。ただ、あの静謐な空間を、祖父が生きていた頃の姿に戻したいと、自然にそう思ったのだ。
